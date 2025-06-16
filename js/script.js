@@ -7,10 +7,6 @@ const c = document.querySelector(".c");
 
 let isPaused = false(); 
 
-let animation = gsap.to(
-    ".c",
-
-);
 
 playButton.addEventListener("click", () => {
     if (!isCLicked) {
@@ -35,8 +31,7 @@ restartButton.addEventListener("hover", () => {
 });
 
 
-
-gsap.to(
+let animation = gsap.to(
     ".c",
     {
         y:82,
