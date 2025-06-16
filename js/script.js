@@ -1,18 +1,40 @@
-let animation = {value:0};
-let myElement = document.querySelector(".c")
+gsap.registerPlugin(MotionPathPlugin);
 
-gsap.to (
-    counter,
-    {
-        value:100,
-        duration:7,
-        onUpdate: ()=>{
-            counter++;
-        
-         }
+const playButton = document.querySelector(".play");
+const pauseButton = document.querySelector(".vine"); 
+const restartButton = document.querySelector(".background");
+const c = document.querySelector(".c");
+
+let isPaused = false(); 
+
+let animation = gsap.to(
+    ".c",
+
+);
+
+playButton.addEventListener("click", () => {
+    if (!isCLicked) {
+        animation.play();
+    }
+    animation.play();
+    });
+
+pauseButton.addEventListener("click", () =>{
+    if (!isPaused) {
+        animation.pause();
+    } else {
+        animation.play();
     }
 
-)
+    isPaused = !isPaused
+});
+
+restartButton.addEventListener("hover", () => {
+    animation.restart();
+    animation.pause();
+});
+
+
 
 gsap.to(
     ".c",
