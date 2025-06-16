@@ -2,9 +2,24 @@
     box-sizing: border-box;
 }
 
-
-
-.vine{
-    align-items: center;
+body{
+    display: flex;
 }
+
+.bkgr{
+    background-attachment: unset;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 150mm 150mm 150mm 150mm ;
+    grid-template-rows: 82mm 82mm 82mm 82mm 82mm 82mm 82mm 82mm 82mm 82mm ;
+    background-image: url("//images/BALOOONEFFECT.png");
+    padding: 6px;
+}
+
+
+
 
