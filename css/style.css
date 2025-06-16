@@ -75,6 +75,51 @@ body{
 }
 
 
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 10mm 10mm 10mm ;
+    grid-template-rows: 10mm 10mm 10mm 10mm 10mm 10mm 10mm 10mm 10mm 10mm 10mm 10mm 10mm ;
+    padding-left: 2mm;
+}
+
+#play{
+    display: grid;
+    grid-column: 1;
+    grid-row: 11;
+    align-self: center;
+    background-color: rgb(149, 163, 149);
+    padding: 2mm;
+    border: 0;
+}
+
+
+#pause{
+    display: grid;
+    grid-column: 1;
+    grid-row: 12;
+    align-self: center;
+    background-color: rgb(149, 163, 149);
+    padding: 2mm;
+    border: 0;
+}
+
+#reset{
+    display: grid;
+    grid-column: 1;
+    grid-row: 13;
+    align-self: center;
+    background-color: rgb(149, 163, 149);
+    padding: 2mm;
+    border: 0;
+    
+
+}
+
 
 
 
