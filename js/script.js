@@ -1,3 +1,4 @@
+console.log
 gsap.registerPlugin(MotionPathPlugin);
 
 const playButton = document.querySelector(".play");
