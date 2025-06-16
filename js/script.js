@@ -1,8 +1,16 @@
 
-document.querySelector(".c")
+    const pauseButton = document.getElementById('pauseButton');
+    const animatedElement = document.querySelector('.animated-element');
 
-
-
+    pauseButton.addEventListener('click', () => {
+        if (animatedElement.style.animationPlayState === 'paused') {
+            animatedElement.style.animationPlayState = 'running';
+            pauseButton.textContent = 'Pause';
+        } else {
+            animatedElement.style.animationPlayState = 'paused';
+            pauseButton.textContent = 'Play';
+        }
+    });
 
 
 
