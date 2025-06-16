@@ -1,5 +1,5 @@
 gsap.to(
-    ".box",
+    ".c",
     {
         x:500,
         duration: 3,
