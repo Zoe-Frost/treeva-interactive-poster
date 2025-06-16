@@ -2,23 +2,35 @@
     box-sizing: border-box;
 }
 
+
 body{
     display: flex;
+    margin-top: 0;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
 
-.bkgr{
-    background-attachment: unset;
-}
-
-
+/* The grid for placing the letters*/
 
 .container{
     display: grid;
+    align-content: center;
     grid-template-columns: 14mm 1mm 7mm 0mm 52mm 15mm 0mm  ;
     grid-template-rows: 2mm 19mm 30mm 10mm 26mm 21mm 22mm 10mm;
     background-image: url("//images/BALOOONEFFECT.png");
-    padding: 5px;
+    background-color: black;
+    height: 820px;
+    width: 640px;
+    padding-bottom: 50px;
+    padding-left: 95px;
+    padding-right: 80px;
+    margin-top: -20;
+
 }
+
+/* Placing the letters*/
 
 .c{
     display: grid;
