@@ -20,6 +20,13 @@ body{
     padding: 6px;
 }
 
+.c{
+    display: grid;
+    grid-column: 1;
+    grid-row: 6;
+
+}
+
 
 
 
