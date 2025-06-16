@@ -1,8 +1,6 @@
 gasp.to(
     ".box",
     {
-        x:100,
-        duration: 3 
+        x:500
     }
-    
 );
