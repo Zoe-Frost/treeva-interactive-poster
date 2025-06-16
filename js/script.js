@@ -1,17 +1,12 @@
 gsap.registerPlugin(MotionPathPlugin);
 
 const playButton = document.querySelector(".play");
-const pauseButton = document.querySelector(".vine"); 
-const restartButton = document.querySelector(".background");
-const c = document.querySelector(".c");
+const pauseButton = document.querySelector(".pause"); 
+const restartButton = document.querySelector(".reset");
 
 let isPaused = false(); 
 
-
 playButton.addEventListener("click", () => {
-    if (!isCLicked) {
-        animation.play();
-    }
     animation.play();
     });
 
@@ -30,8 +25,7 @@ restartButton.addEventListener("hover", () => {
     animation.pause();
 });
 
-
-let animation = gsap.to(
+gsap.to(
     ".c",
     {
         y:82,
