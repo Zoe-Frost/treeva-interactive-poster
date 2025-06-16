@@ -1,5 +1,5 @@
 console.log
-gsap.registerPlugin(MotionPathPlugin);
+import { gsap } from "gsap";
 
 const playButton = document.querySelector(".play");
 const pauseButton = document.querySelector(".pause"); 
@@ -7,9 +7,11 @@ const restartButton = document.querySelector(".reset");
 
 let isPaused = false(); 
 
+
+
 playButton.addEventListener("click", () => {
     animation.play();
-    });
+});
 
 pauseButton.addEventListener("click", () =>{
     if (!isPaused) {
@@ -21,10 +23,13 @@ pauseButton.addEventListener("click", () =>{
     isPaused = !isPaused
 });
 
-restartButton.addEventListener("hover", () => {
+restartButton.addEventListener("click", () => {
     animation.restart();
     animation.pause();
 });
+
+
+
 
 gsap.to(
     ".c",
