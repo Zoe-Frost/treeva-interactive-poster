@@ -1,4 +1,3 @@
-console.log
 import { gsap } from "gsap";
 
 const playButton = document.querySelector(".play");
@@ -6,7 +5,6 @@ const pauseButton = document.querySelector(".pause");
 const restartButton = document.querySelector(".reset");
 
 let isPaused = false(); 
-
 
 
 playButton.addEventListener("click", () => {
