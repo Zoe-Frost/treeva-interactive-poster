@@ -1,10 +1,10 @@
-import { gsap } from "gsap";
 
-const playButton = document.querySelector(".play");
-const pauseButton = document.querySelector(".pause"); 
-const restartButton = document.querySelector(".reset");
+const playButton = document.querySelector("#play");
+const pauseButton = document.querySelector("#pause"); 
+const restartButton = document.querySelector("#reset");
+const animation = gsap.timeline({ paused: true });
 
-let isPaused = false(); 
+let isPaused = true(); 
 
 
 playButton.addEventListener("click", () => {
@@ -34,7 +34,7 @@ gsap.to(
     {
         y:82,
         x:-160,
-        duration: 1,
+        duration: 2,
         ease:"bounce.out"
 
     }
@@ -45,7 +45,7 @@ gsap.to(
     {
         y:170,
         x:-285,
-        duration:1,
+        duration:2,
         ease:"bounce.out"
     }
 );
@@ -55,7 +55,7 @@ gsap.to(
     {
         y:260,
         x:70,
-        duration:1,
+        duration:2,
         ease:"bounce.out"
     }
 );
@@ -65,7 +65,7 @@ gsap.to(
     {
         y:370,
         x:-75,
-        duration:1,
+        duration:2,
         ease:"bounce.out"
     }
 );
@@ -75,7 +75,7 @@ gsap.to(
     {
         y:528,
         x:-10,
-        duration:1,
+        duration:2,
         ease:"bounce.out"
     }
 );
@@ -85,7 +85,7 @@ gsap.to(
     {
         y:424,
         x:356,
-        duration:1,
+        duration:2,
         ease:"bounce.out"
     }
 );
@@ -95,7 +95,7 @@ gsap.to(
     {
         y:620,
         x:426,
-        duration:1,
+        duration:2,
         ease:"bounce.out"
     }
 );
