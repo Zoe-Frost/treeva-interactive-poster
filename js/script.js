@@ -96,6 +96,7 @@ gsap.to(
         y:620,
         x:426,
         duration:2,
+        delay:1,
         ease:"bounce.out"
     }
 );
